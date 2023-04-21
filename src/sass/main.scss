@@ -1,0 +1,56 @@
+p {
+  margin: 8px 0;
+}
+
+img {
+  display: block;
+}
+
+.search-form {
+  padding: 10px;
+  background-color: blanchedalmond;
+}
+
+.br {
+  border-radius: 8px;
+}
+
+.section-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 30px;
+  gap: 30px;
+}
+
+.card {
+  display: block;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  transition: all 250ms ease-out;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.card-details-content {
+  text-align: center;
+  font-size: 14px;
+}
+
+.card-details-content-label {
+  font-weight: 600;
+}

@@ -8,7 +8,35 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <!-- <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit">Search</button>
+    </form> -->
+    <form class="search-form">
+      <div class="input-group">
+        <div class="input-group2">
+          <label>
+            <input
+              type="search"
+              class="search-field"
+              placeholder="Search images..."
+              value=""
+              autocomplete="off"
+            />
+          </label>
+          <input
+            type="submit"
+            class="rstore-domain-search-button search-submit btn btn-primary"
+            value="Search"
+          />
+        </div>
+      </div>
+    </form>
+    <section class="section-main"></section>
   </body>
 </html>
