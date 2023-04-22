@@ -19,6 +19,7 @@ function handleObserver(entries, observer) {
     getCardInfo(currentQuery, currentPage)
       .then(data => {
         console.log(data);
+        console.log(`Observer ${currentPage} did it's job and was disabled!`);
 
         if (data.hits == 0) {
           Notify.failure(
@@ -35,7 +36,6 @@ function handleObserver(entries, observer) {
       .catch(console.log);
 
     observer.unobserve(entries[0].target);
-    console.log(`Observer ${currentPage} did it's job and was disabled!`);
   }
 }
 
