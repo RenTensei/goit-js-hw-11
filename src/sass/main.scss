@@ -2,8 +2,14 @@ p {
   margin: 8px 0;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(38, 57, 77);
+}
+
 img {
   display: block;
+  object-fit: cover;
 }
 
 .search-form {
@@ -15,13 +21,15 @@ img {
   border-radius: 8px;
 }
 
-.section-main {
+.gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 
   padding: 30px;
   gap: 30px;
+  margin: 0 auto;
+  max-width: 1430px;
 }
 
 .card {
@@ -34,9 +42,7 @@ img {
 }
 
 .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   cursor: pointer;
 }
 
@@ -48,9 +54,14 @@ img {
 
 .card-details-content {
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .card-details-content-label {
   font-weight: 600;
+}
+
+.card-image-wrapper {
+  max-width: 320px;
+  max-height: 213px;
 }
