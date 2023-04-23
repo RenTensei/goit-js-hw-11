@@ -47,7 +47,7 @@ function handleSubmit(e) {
 
   console.log(currentQuery);
 
-  getCardInfo(currentQuery)
+  getCardInfo(currentQuery, currentPage)
     .then(data => {
       if (data.total == 0) {
         Notify.failure('no such images found :(');

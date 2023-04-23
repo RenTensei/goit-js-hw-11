@@ -36,8 +36,7 @@ function renderImageCard({
             <p class="card-details-content-amount">${downloads}</p>
           </div>
         </div>
-
-    </div>
+      </div>
     </a>
     
   `;
